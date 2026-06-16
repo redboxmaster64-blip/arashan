@@ -1,0 +1,612 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f7fc;
+    color: #1e2b3c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+.header {
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    background: #2a7f62;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    color: #1e3a5f;
+}
+
+.logo-text p {
+    font-size: 12px;
+    color: #2a7f62;
+}
+
+/* Контакты в шапке */
+.header-contacts {
+    display: flex;
+    gap: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.contact-item i {
+    color: #2a7f62;
+}
+
+.contact-label {
+    font-size: 12px;
+    color: #6b7a8c;
+}
+
+.contact-value {
+    font-weight: 600;
+}
+
+/* Действия в шапке */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-link {
+    position: relative;
+    color: #1e2b3c;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 12px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-call {
+    background: #2a7f62;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-call:hover {
+    background: #1e5f48;
+}
+
+/* Навигация */
+.navbar {
+    background: white;
+    border-bottom: 1px solid #e5ecf5;
+    padding: 10px 0;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #1e2b3c;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-menu a i {
+    color: #2a7f62;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #2a7f62;
+}
+
+/* Шапка страницы */
+.page-header {
+    background: linear-gradient(135deg, #2a7f62 0%, #1e5f48 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Сетка контактов */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #2a7f62 0%, #1e5f48 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.contact-icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #6b7a8c;
+    margin-bottom: 8px;
+}
+
+.contact-card a {
+    color: #2a7f62;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.phones-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.phones-list li {
+    margin-bottom: 10px;
+}
+
+.phones-list i {
+    width: 25px;
+    color: #2a7f62;
+}
+
+/* Секция карты */
+.map-section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.map-section h2 {
+    font-size: 24px;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.address-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.address-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.address-item:hover {
+    background: #e8f0fe;
+}
+
+.address-icon {
+    width: 40px;
+    height: 40px;
+    background: #2a7f62;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.address-icon i {
+    color: white;
+    font-size: 18px;
+}
+
+.address-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e2b3c;
+    margin-bottom: 5px;
+}
+
+.address-info p {
+    font-size: 14px;
+    color: #6b7a8c;
+    margin-bottom: 5px;
+}
+
+.address-info .work-time {
+    font-size: 12px;
+    color: #2a7f62;
+    font-weight: 500;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2a7f62;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.map-link:hover {
+    text-decoration: underline;
+}
+
+/* Форма обратной связи */
+.feedback-section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-section h2 {
+    font-size: 24px;
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.feedback-desc {
+    color: #6b7a8c;
+    margin-bottom: 25px;
+}
+
+.feedback-form {
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1e2b3c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e5ecf5;
+    border-radius: 12px;
+    font-size: 14px;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2a7f62;
+    box-shadow: 0 0 0 3px rgba(42, 127, 98, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.submit-btn {
+    background-color: #2a7f62;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1e5f48;
+    transform: translateY(-2px);
+}
+
+.success-message,
+.error-message {
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: none;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Социальные сети */
+.social-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social-section h2 {
+    font-size: 24px;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    width: 60px;
+    height: 60px;
+    background: #f0f2f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: #1e2b3c;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: #2a7f62;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Футер */
+.footer {
+    background: #1e2b3c;
+    color: #cbd5e1;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 12px;
+}
+
+.footer-col a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-col a:hover {
+    color: #2a7f62;
+}
+
+.footer-contacts i {
+    width: 25px;
+    color: #2a7f62;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #334155;
+    font-size: 13px;
+}
+
+/* Уведомления */
+.add-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: slideIn 0.3s ease;
+    z-index: 10000;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-notification.success {
+    background: #2a7f62;
+    color: white;
+}
+
+.add-notification.info {
+    background: #17a2b8;
+    color: white;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 28px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .address-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-menu {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .header-contacts {
+        justify-content: center;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-contacts ul li {
+        justify-content: center;
+    }
+}

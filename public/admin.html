@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель - Аптека Арашан</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Подключаем отдельный CSS файл -->
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="index.html" class="logo-link" style="text-decoration: none;">
+            <div class="logo-area">
+                <div class="logo-icon"><i class="fas fa-capsules"></i></div>
+                <div class="logo-text"><h1>Арашан</h1><p>АДМИН-ПАНЕЛЬ</p></div>
+            </div>
+        </a>
+        <div class="header-actions">
+            <a href="index.html" class="btn-call btn-outline">
+                <i class="fas fa-arrow-left"></i> На сайт
+            </a>
+            <button id="logoutBtn" class="btn-call btn-danger" style="display: none;">
+                <i class="fas fa-sign-out-alt"></i> Выйти
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div id="adminPanel" class="admin-panel">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-pulse"></i> Загрузка...
+        </div>
+    </div>
+</main>
+
+<!-- Подключаем отдельный JS файл -->
+<script src="js/admin.js"></script>
+
+</body>
+</html>

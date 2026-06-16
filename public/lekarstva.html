@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лекарства - Аптека Арашан</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/lekarstva.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="index.html" class="logo-link">
+            <div class="logo-area"><div class="logo-icon"><i class="fas fa-capsules"></i></div><div class="logo-text"><h1>Арашан</h1><p>ЗДОРОВЬЕ РЯДОМ</p></div></div>
+        </a>
+        <div class="header-contacts">
+            <div class="contact-item"><i class="fas fa-phone-alt"></i><div><div class="contact-label">Позвонить</div><span class="contact-value">+996 (776) 00-22-99</span></div></div>
+            <div class="contact-item"><i class="fas fa-clock"></i><div><div class="contact-label">Часы работы</div><span class="contact-value">8:00 - 21:00</span></div></div>
+        </div>
+        <div class="header-actions">
+            <div id="userMenu"></div>
+            <a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            <button class="btn-call" id="callButton"><i class="fas fa-phone"></i> Заказать звонок</button>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="container">
+        <ul class="nav-menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="lekarstva.html" class="active"><i class="fas fa-pills"></i> Лекарства</a></li>
+            <li><a href="detyam.html"><i class="fas fa-baby"></i> Детям</a></li>
+            <li><a href="vitaminy.html"><i class="fas fa-heartbeat"></i> Витамины</a></li>
+            <li><a href="medtehnika.html"><i class="fas fa-shield-alt"></i> Медтехника</a></li>
+            <li><a href="o-nas.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+            <li><a href="kontakty.html"><i class="fas fa-phone"></i> Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="category-banner">
+    <div class="container">
+        <h1><i class="fas fa-pills"></i> Лекарства</h1>
+        <p>Широкий ассортимент лекарственных препаратов по доступным ценам</p>
+    </div>
+</section>
+
+<main class="container">
+    <div class="filter-section">
+        <div class="filter-title">Фильтр по категориям:</div>
+        <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-category="all">Все лекарства</button>
+            <button class="filter-btn" data-category="painkillers">Обезболивающие</button>
+            <button class="filter-btn" data-category="antibiotics">Антибиотики</button>
+            <button class="filter-btn" data-category="cold">От простуды</button>
+            <button class="filter-btn" data-category="heart">Сердечно-сосудистые</button>
+            <button class="filter-btn" data-category="digestive">Желудочно-кишечные</button>
+            <button class="filter-btn" data-category="antifungal">Противогрибковые</button>
+            <button class="filter-btn" data-category="allergy">Антигистаминные</button>
+        </div>
+    </div>
+    
+    <div class="sort-section">
+        <div class="results-count" id="resultsCount">Показано 0 товаров</div>
+        <div><label>Сортировать: </label><select id="sortSelect" class="sort-select">
+            <option value="name_asc">По названию (А-Я)</option>
+            <option value="name_desc">По названию (Я-А)</option>
+            <option value="price_asc">По цене (сначала дешевые)</option>
+            <option value="price_desc">По цене (сначала дорогие)</option>
+        </select></div>
+    </div>
+    
+    <div class="products-grid" id="productsGrid"></div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col"><h4>Аптека Арашан</h4><ul><li><a href="o-nas.html">О нас</a></li><li><a href="#">Новости</a></li><li><a href="#">Вакансии</a></li></ul></div>
+            <div class="footer-col"><h4>Покупателям</h4><ul><li><a href="#">Как сделать заказ</a></li><li><a href="#">Доставка и оплата</a></li><li><a href="#">Вопрос-ответ</a></li></ul></div>
+            <div class="footer-col footer-contacts"><h4>Контакты</h4><ul><li><i class="fas fa-map-marker-alt"></i> г. Каракол, ул. Джакыпова, 40а</li><li><i class="fas fa-phone"></i> +996 (776) 00-22-99</li><li><i class="fas fa-envelope"></i> info@arashan.kg</li></ul></div>
+        </div>
+        <div class="copyright">© 2024 Аптека "Арашан". Все права защищены.</div>
+    </div>
+</footer>
+
+<script src="js/lekarstva.js"></script>
+</body>
+</html>

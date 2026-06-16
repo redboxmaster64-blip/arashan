@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аптека Арашан - О нас</title>
+    
+    <!-- Шрифты и иконки -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Наши стили -->
+    <link rel="stylesheet" href="css/o-nas.css">
+</head>
+<body>
+
+<!-- ========== ШАПКА ========== -->
+<header class="header">
+    <div class="container header-content">
+        <a href="index.html" class="logo-link">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fas fa-capsules"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Арашан</h1>
+                    <p>ЗДОРОВЬЕ РЯДОМ</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="header-contacts">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <div class="contact-label">Позвонить</div>
+                    <span class="contact-value">+996 (776) 00-22-99</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <div class="contact-label">Часы работы</div>
+                    <span class="contact-value">8:00 - 21:00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <div id="userMenu"></div>
+            <a href="cart.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="btn-call" id="callButton">
+                <i class="fas fa-phone"></i> Заказать звонок
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ========== НАВИГАЦИЯ ========== -->
+<nav class="navbar">
+    <div class="container">
+        <ul class="nav-menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+            <li><a href="lekarstva.html"><i class="fas fa-pills"></i> Лекарства</a></li>
+            <li><a href="detyam.html"><i class="fas fa-baby"></i> Детям</a></li>
+            <li><a href="vitaminy.html"><i class="fas fa-heartbeat"></i> Витамины</a></li>
+            <li><a href="medtehnika.html"><i class="fas fa-shield-alt"></i> Медтехника</a></li>
+            <li><a href="o-nas.html" class="active"><i class="fas fa-info-circle"></i> О нас</a></li>
+            <li><a href="kontakty.html"><i class="fas fa-phone"></i> Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ========== ЗАГОЛОВОК СТРАНИЦЫ ========== -->
+<div class="page-header">
+    <div class="container">
+        <h1>О нашей аптеке</h1>
+        <p>Заботимся о вашем здоровье с 2010 года</p>
+    </div>
+</div>
+
+<!-- ========== ОСНОВНОЙ КОНТЕНТ ========== -->
+<main class="container">
+    <!-- История аптеки -->
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2 class="section-title">Наша история</h2>
+                <p>Аптека "Арашан" открыла свои двери для посетителей в 2010 году. За это время мы выросли из небольшой аптеки в успешный центр медицинских услуг.</p>
+                <p>Сегодня у нас 3 аптеки в разных районах города, более 9 сотрудников и тысячи благодарных клиентов. Мы гордимся тем, что нам доверяют самое дорогое — здоровье.</p>                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">14+</div>
+                        <div class="stat-label">лет работы</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">аптеки в городе</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">9+</div>
+                        <div class="stat-label">сотрудников</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">товаров</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/pharmacy.jpg" alt="Наша аптека" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'placeholder-image\'><i class=\'fas fa-store\'></i><p>Фото аптеки</p></div>';">
+            </div>
+        </div>
+    </section>
+
+    <!-- Наши преимущества -->
+    <section class="advantages">
+        <h2 class="section-title">Почему выбирают нас</h2>
+        <div class="advantages-grid">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Только сертифицированные товары</h3>
+                <p>Все лекарства имеют официальные сертификаты качества и соответствуют стандартам</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Удобный график работы</h3>
+                <p>Мы работаем с 8:00 до 21:00 без выходных и праздников, чтобы вы могли получить помощь в любое время</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>Бесплатная доставка</h3>
+                <p>При заказе от 1000 сом доставим лекарства бесплатно в любую точку города</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Консультации фармацевтов</h3>
+                <p>Опытные фармацевты всегда готовы помочь с выбором лекарств</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наша команда -->
+    <section class="team-section">
+        <h2 class="section-title">Наша команда</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-photo">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3>Амина</h3>
+                <p class="team-position">Главный фармацевт</p>
+                <p class="team-experience">Стаж 15 лет</p>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3>Амина</h3>
+                <p class="team-position">Заведующий аптекой</p>
+                <p class="team-experience">Стаж 15 лет</p>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3>Зарина</h3>
+                <p class="team-position">Фармацевт-консультант</p>
+                <p class="team-experience">Стаж 5 лет</p>
+            </div>
+            <div class="team-card">
+                <div class="team-photo">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h3>Айчюрок</h3>
+                <p class="team-position">Фармацевт</p>
+                <p class="team-experience">Стаж 5 лет</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Лицензии и сертификаты -->
+    <section class="licenses">
+        <h2 class="section-title">Лицензии и сертификаты</h2>
+        <div class="licenses-grid">
+            <div class="license-card">
+                <i class="fas fa-file-pdf"></i>
+                <h4>Лицензия на фармацевтическую деятельность</h4>
+                <p>№ ЛО-77-01-123456 от 15.05.2023</p>
+                <a href="#" class="btn-link">Скачать PDF</a>
+            </div>
+            <div class="license-card">
+                <i class="fas fa-file-pdf"></i>
+                <h4>Сертификат соответствия ГОСТ</h4>
+                <p>№ РОСС KG.АВ12.Н12345 от 20.03.2024</p>
+                <a href="#" class="btn-link">Скачать PDF</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ========== ПОДВАЛ ========== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Аптека Арашан</h4>
+                <ul>
+                    <li><a href="o-nas.html">О нас</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Лицензии</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Покупателям</h4>
+                <ul>
+                    <li><a href="#">Как сделать заказ</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Бонусная программа</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contacts">
+                <h4>Контакты</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> г. Каракол, ул. Токтогул, 41</li>
+                    <li><i class="fas fa-phone"></i> +996 (776) 00-22-99</li>
+                    <li><i class="fas fa-envelope"></i> info@arashan.kg</li>
+                    <li><i class="fas fa-clock"></i> c 8:00 до 21:00</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Мы в соцсетях</h4>
+                <ul class="social-links-footer">
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 Аптека "Арашан". Все права защищены.
+        </div>
+    </div>
+</footer>
+
+<script src="js/o-nas.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+http://localhost:3000/admin.html
+
+npm start
+node server.js
